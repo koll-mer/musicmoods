@@ -4,9 +4,21 @@ Using Spotify data to visualize trends in listening according to moods
 ## Comparing a user's Spotify playlists based on mood
 Spotify provides several variables about each track on its API (key, tempo, danceability, etc.). In order to measure the "mood" of a track, I plotted two variables against each other on a scatterplot: energy (x axis) and valence (y axis). Energy is a measure of exactly what it sounds like for a track. Valence is a measure of the overall positivity of the song. 
 
-Using the ggplot2, dplyr, and spotifyr R packages, I was able to compare the different moods of my Spotify playlists. The primary use of this feature is to eliminate any songs that are outliers in the playlist, thus honing in on the particular "mood" of a playlist. In addition, I directly compared my "happy" and "sad" playlists to see how much overlap there was.
+Using the ggplot2, dplyr, and spotifyr R packages, I was able to compare the different moods of my Spotify playlists. The primary use of this feature is to eliminate any songs that are outliers in the playlist, thus honing in on the particular "mood" of a playlist. Some explanations behind my playlist names/genres: 
+* **good vibes project**: happy songs
+* **vault.** : sad songs
+* **enter the kingdom**: rap and hip hop
+* **good morning everyone**: chill R&B/ pop
+* **intense study**: movie soundtracks
+* **volcano soup**: workout playlist (most tracks have a fairly high energy)
+* **echo chamber**: EDM study 
+* **candle city**: acoustic guitar 
+* **afterglow**: rock/alternative rock
+
 
 ![alt text](https://github.com/koll-mer/musicmoods/blob/master/playlist%20mood%20comparison.png)
+
+In addition, I directly compared my happy and sad playlists to see how much overlap there was.
 ![alt text](https://github.com/koll-mer/musicmoods/blob/master/vault%20vs%20gvp.png)
 
 ## General use

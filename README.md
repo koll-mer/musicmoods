@@ -6,5 +6,10 @@ Spotify provides several variables about each track on its API (key, tempo, danc
 
 Using the ggplot2, dplyr, and spotifyr R packages, I was able to compare the different moods of my Spotify playlists. The primary use of this feature is to eliminate any songs that are outliers in the playlist, thus honing in on the particular "mood" of a playlist. In addition, I directly compared my "happy" and "sad" playlists to see how much overlap there was.
 
+![alt text](https://github.com/koll-mer/musicmoods/blob/master/playlist%20mood%20comparison.png)
+![alt text](https://github.com/koll-mer/musicmoods/blob/master/vault%20vs%20gvp.png)
+
 ## General use
 This code can be used to compare the moods of Spotify playlists for any user. Users of this code will need to obtain a Spotify Client ID and Secret ID from https://developer.spotify.com/dashboard/ that then can be manually input into the code. The username will also need to be adjusted when running the code for yourself.
+
+

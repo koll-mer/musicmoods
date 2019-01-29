@@ -25,4 +25,4 @@ complete <- left_join(allplaylists, ftrspopu, by = "track_uri")
 
 #playlists mood comparison
 ggplot(complete, aes(x = energy, y = valence)) + geom_point() + facet_wrap(~ playlist_name)
-
+https://github.com/koll-mer/musicmoods/blob/master/playlist%20mood%20comparison.png

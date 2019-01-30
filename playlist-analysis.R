@@ -30,3 +30,8 @@ ggplot(complete, aes(x = energy, y = valence)) + geom_point() + facet_wrap(~ pla
 moods <- complete %>% filter(playlist_name %in% c("good vibes project", "vault."))
 ggplot(moods, aes(x = energy, y = valence, color = playlist_name)) + geom_point() +
   labs(title = "Happy vs. Sad Playlist", color='Playlist Name') 
+
+#removing outliers in "vault." - the sad playlist
+ranks <- complete %>% filter(playlist_name == "vault.") %>% arrange(-valence) %>%
+  select(valence, energy, track_name, artist_name)
+ranks

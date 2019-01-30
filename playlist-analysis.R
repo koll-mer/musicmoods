@@ -27,6 +27,6 @@ complete <- left_join(allplaylists, ftrspopu, by = "track_uri")
 ggplot(complete, aes(x = energy, y = valence)) + geom_point() + facet_wrap(~ playlist_name)
 
 #comparing the moods of my happy and sad playlists
-moods <- complete %>% filter(playlist_name == c("good vibes project", "vault."))
+moods <- complete %>% filter(playlist_name %in% c("good vibes project", "vault."))
 ggplot(moods, aes(x = energy, y = valence, color = playlist_name)) + geom_point() +
   labs(title = "Happy vs. Sad Playlist", color='Playlist Name') 

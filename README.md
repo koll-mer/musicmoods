@@ -19,7 +19,7 @@ Using the ggplot2, dplyr, and spotifyr R packages, I was able to compare the dif
 ![alt text](https://github.com/koll-mer/musicmoods/blob/master/playlist%20mood%20comparison.png)
 
 In addition, I directly compared my happy and sad playlists to see how much overlap there was.
-![alt text](https://github.com/koll-mer/musicmoods/blob/master/happy%20vs%20sad.png)
+![alt text](https://github.com/koll-mer/musicmoods/blob/master/happysad.png)
 
 ## General use
 This code can be used to compare the moods of Spotify playlists for any user. Users of this code will need to obtain a Spotify Client ID and Secret ID from https://developer.spotify.com/dashboard/ that then can be manually input into the code. The username will also need to be adjusted when running the code for yourself.

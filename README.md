@@ -21,6 +21,25 @@ Using the ggplot2, dplyr, and spotifyr R packages, I was able to compare the dif
 In addition, I directly compared my happy and sad playlists to see how much overlap there was.
 ![alt text](https://github.com/koll-mer/musicmoods/blob/master/happysad.png)
 
+Let's say I wanted to remove some outliers that didn't seem to fit the mood of the overall playlist, like those in that have too high of a valence in **vault.** Using dplyr, I can arrange the songs in **vault.** to see which I should take out. 
+```
+# A tibble: 188 x 4
+   valence energy track_name                        artist_name  
+     <dbl>  <dbl> <chr>                             <chr>        
+ 1   0.796 0.0514 Ether                             Puma Blue    
+ 2   0.735 0.17   Baby Please                       Black Pool   
+ 3   0.707 0.437  all the kids are depressed        Jeremy Zucker
+ 4   0.603 0.473  When You're Ready                 Shawn Mendes 
+ 5   0.578 0.469  Our House by the Waterfall        Rook1e       
+ 6   0.575 0.376  Erase                             Omar Apollo  
+ 7   0.546 0.109  im closing my eyes (feat. shiloh) potsu        
+ 8   0.544 0.267  Show Me How                       Men I Trust  
+ 9   0.538 0.43   Idk Love                          Jeremy Zucker
+10   0.538 0.505  SAN MARCOS                        BROCKHAMPTON 
+# ... with 178 more rows
+```
+Looks like Ether by Puma Blue is the point in the upper-left-most corner in the plot, so I'll probably take that song out of **vault.**
+
 ## General use
 This code can be used to compare the moods of Spotify playlists for any user. Users of this code will need to obtain a Spotify Client ID and Secret ID from https://developer.spotify.com/dashboard/ that then can be manually input into the code. The username will also need to be adjusted when running the code for yourself.
 
